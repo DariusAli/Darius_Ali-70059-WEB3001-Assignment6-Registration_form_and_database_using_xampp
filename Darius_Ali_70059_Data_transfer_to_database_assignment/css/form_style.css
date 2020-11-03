@@ -1,0 +1,184 @@
+/*Include padding and boarder in the element's total width and height*/
+*{
+    box-sizing: border-box;
+}
+
+/*place an empty spot between menu options*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*used to create a column creat the columns on the web page with a padding of 15px
+and floating from the left*/
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/* for mobile phones: */
+[class*="col-"]{
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+    /*For Tablets:*/
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 8.33%;}
+    .col-s-3{width: 8.33%;}
+    .col-s-4{width: 8.33%;}
+    .col-s-5{width: 8.33%;}
+    .col-s-6{width: 100%;} /*used for form content*/
+    .col-s-7{width: 8.33%;}
+    .col-s-8{width: 25%;} /*used for menu*/
+    .col-s-9{width: 8.33%;}
+    .col-s-10{width: 8.33%;}
+    .col-s-11{width: 8.33%;}
+    .col-s-12{width: 0%;}
+} 
+
+@media only screen and (min-width: 786px){
+    /*For desktop:*/
+    .col-1{width:8.33%;}
+    .col-2{width: 8.33%;}
+    .col-3{width: 8.33%;}
+    .col-4{width: 8.33%;}
+    .col-5{width: 105%;} /*used for form content*/
+    .col-6{width: 8.33%;}
+    .col-7{width: 8.33%;}
+    .col-8{width: 25%;} /*used for menu*/
+    .col-9{width: 8.33%;}
+    .col-10{width: 8.33%;}
+    .col-11{width: 8.33%;}
+    .col-12{width: 0%;}
+}
+
+/*used to format the body of the web page*/
+body{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    background-color: silver;
+}
+
+/*used to format the header at the top of the page*/
+.header{
+    background-color: darkgrey;
+}
+
+/*used to format the fotter of the web page*/
+.footer{
+    position: relative;
+    padding: 0.75% 7% 0.75% 0;
+    bottom: 0;
+    width: 100%;
+    background-color: silver;
+    color: black;
+    text-align: center;
+}
+
+/*used to format the menu for the application form*/
+.menu{
+    width: 100%;
+    padding:0 15% 0 20%;
+}
+
+/*used to set te=he colour and padding for the items in the menu*/
+.menu tr td{
+    background-color: grey;
+    padding-left: 5%;
+    padding: 9px 0 9px 8px;
+}
+
+/*lets the actvie menu item have a background colour of black*/
+.menu td.active{
+    background-color: black;
+}
+
+/*formats the form layout on the screen*/
+form{
+    width: 80%;
+    padding: 0% 0% 0% 10%;
+    color: black;
+}
+
+/*aligns the header text Ministry of Education
+to the center of the screen
+*/
+h1{
+    text-align:center;
+}
+
+/*aligns the header text Application For Admission 
+Into A Public Primary School to the center of the screen
+*/
+h2{
+    text-align: center;
+}
+
+/*formats the Child Information fieldset*/
+.CI{
+    padding: 0% 3% 5% 5%;
+}
+
+/*formats the submit button at the end of each form*/
+.submit{
+    margin-left: 35%;
+}
+
+/*foramts the next button on the home page*/
+.index_next{
+    margin-left: 45%;
+}
+
+/*formats the Parent/Guardian Information fieldset*/
+.PGI{
+    padding: 0% 10% 5% 10%;
+}
+
+/*formats the Sibling Information fieldset*/
+.SI{
+    padding: 0% 10% 5% 10%;
+}
+
+/*used to format the image in the header*/
+.center_image_header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media print{
+    .menu{
+        visibility: hidden;
+    }
+
+    .menu tr td{
+        visibility: hidden;
+    }
+
+    .menu td.active{
+        visibility: hidden;
+    }
+
+    .submit{
+        visibility: hidden;
+    }
+
+    .reset{
+        visibility: hidden;
+    }
+
+    .next{
+        visibility: hidden;
+    }
+
+    .previous{
+        visibility:hidden;
+    }
+
+    .print{
+        visibility: hidden;
+    }
+}

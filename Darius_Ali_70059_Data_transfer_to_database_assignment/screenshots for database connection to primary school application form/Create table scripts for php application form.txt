@@ -1,0 +1,156 @@
+create table child_applicant(
+Surname varchar(20) not null,
+First_Name varchar(20) not null,
+Other_Name varchar(20),
+Nationality varchar(50) not null,
+DOB varchar(10) not null,
+BC_PIN varchar(12) not null,
+Sex varchar(10) not null,
+Religion varchar(50) not null,
+Address varchcar(120) not null,
+Student_Permit varchar(10) not null,
+Immunisation varchar(10) not null, 
+);
+
+create table parent_guardian(
+name varchar(120) not null;
+Relation varchar(40) not null;
+Email varchar(100) not null;
+Contact_num varchar(30) not null;
+Address varchcar(120) not null
+);
+
+create table siblings(
+name varchar(120);
+class varchar(120);
+);
+
+School(
+Name varchar(300) not null;
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE `Child_applicant` (
+	`Applicant_ID` INT(8) NOT NULL AUTO_INCREMENT,
+	`School` VARCHAR(600) NOT NULL,
+	`Surname` VARCHAR(30) NOT NULL,
+	`First_Name` VARCHAR(30) NOT NULL,
+	`Other_Name` VARCHAR(30),
+	`Nationality` VARCHAR(120) NOT NULL,
+	`DOB` VARCHAR(15) NOT NULL,
+	`BC_PIN` VARCHAR(12) NOT NULL,
+	`Sex` VARCHAR(10) NOT NULL,
+	`Religion` VARCHAR(120) NOT NULL,
+	`Address` VARCHAR(200) NOT NULL,
+	`Student_Permit` VARCHAR(10) NOT NULL,
+	`Immunisation` VARCHAR(10) NOT NULL,
+	PRIMARY KEY (`Applicant_ID`)
+) ENGINE=InnoDB;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE `Child_applicant` (
+	`Applicant_ID` INT(8) NOT NULL AUTO_INCREMENT,
+	`School` VARCHAR(600) NOT NULL,
+	`Surname` VARCHAR(30) NOT NULL,
+	`First_Name` VARCHAR(30) NOT NULL,
+	`Other_Name` VARCHAR(30),
+	`Nationality` VARCHAR(120) NOT NULL,
+	`DOB` VARCHAR(15) NOT NULL,
+	`BC_PIN` VARCHAR(12) NOT NULL,
+	`Sex` VARCHAR(10) NOT NULL,
+	`Religion` VARCHAR(130) NOT NULL,
+	`Address` VARCHAR(200) NOT NULL,
+	`Student_Permit` VARCHAR(10),
+	`Immunisation` VARCHAR(10),
+	PRIMARY KEY (`Applicant_ID`)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `Parent_Guradian` (
+	`Name` VARCHAR(400) NOT NULL,
+	`Realtion` VARCHAR(170) NOT NULL,
+	`Email` VARCHAR(260) NOT NULL,
+	`Contact_Num` VARCHAR(30) NOT NULL,
+	`Address` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `Sibling` (
+	`Name` VARCHAR(400) NOT NULL,
+	`Class` VARCHAR(170) NOT NULL
+) ENGINE=InnoDB;

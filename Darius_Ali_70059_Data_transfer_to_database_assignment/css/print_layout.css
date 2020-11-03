@@ -1,0 +1,290 @@
+/*used to format surname*/
+.Surename{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format first name*/
+.First_Name{
+    float: left;
+    padding: 0 0 0 20%;
+} 
+
+/*used to format other name*/
+.Other_Name{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format nationality*/
+.National{
+    float: left;
+    padding: 0 0 0 23.5%;
+}
+
+/*used to format date of birth*/
+.DateOfBirth{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format birth certificate pin*/
+.B_PIN{
+    float: left;
+    padding: 0 0 0 10.5%;
+}
+
+/*used to format sex*/
+.Sex{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format religion*/
+.Relig{
+    float: left;
+    padding: 0 0 0 47%;
+}
+
+/*used to format applicant address*/
+.addr{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format student permit*/
+.permit{
+    float: left;
+    padding: 0 0 0 20%;
+}
+
+/*used to format immunisation*/
+.immu{
+    float: left;
+    padding: 0 0 0 5%;
+}
+
+/*used to format parent 1 name*/
+.First_parent_name{
+    float: left;
+}
+
+/*used to format parent 1 relation to applicant*/
+.First_parent_relation{
+    float: left;
+    padding: 0 0 0 31%;
+}
+
+/*used to format parent 1 email*/
+.First_parent_email{
+    float: left;
+}
+
+/*used to format parent 1 contact number*/
+.First_parent_contact{
+    float: left;
+    padding: 0 0 0 25%;
+}
+
+/*used to format parent 1 address*/
+.First_parent_address{
+    float: left;
+}
+
+/*used to format parent 2 name*/
+.Second_parent_name{
+    float: left;
+}
+
+/*used to format parent 2 relation to applicant*/
+.Second_parent_relation{
+    float: left;
+    padding: 0 0 0 31%;
+}
+
+/*used to format parent 2 email*/
+.Second_parent_email{
+    float: left;
+}
+
+/*used to format parent 2 contact number*/
+.Second_parent_contact{
+    float: left;
+    padding: 0 0 0 25%;
+}
+
+/*used to format parent 2 address*/
+.Second_parent_address{
+    float: left;
+}
+
+/*used to format sibling 1 name*/
+.Sib1_name{
+    float: left;
+}
+
+/*used to format sibling 1 class*/
+.Sib1_class{
+    float: left;
+}
+
+/*used to format sibling 2 name*/
+.Sib2_name{
+    float: left;
+}
+
+/*used to format sibling 2 class*/
+.Sib2_class{
+    float: left;
+}
+
+/*used to format sibling 3 name*/
+.Sib3_name{
+    float: left;
+}
+
+/*used to format sibling 3 class*/
+.Sib3_class{
+    float: left;
+    padding: 2.5% 0 0 0;
+}
+
+/*used to format sibling 4 name*/
+.Sib4_name{
+    float: left;
+}
+
+/*used to format sibling 4 class*/
+.Sib4_class{
+    float: left;
+}
+
+/*used to format print layout in print preview screen*/
+@media print{
+    .PGI{
+        page-break-before: always;
+    }
+
+    .childInfo{
+        position: relative;
+    }
+
+    .Surename{
+        position: absolute;
+    }
+
+    .First_Name{
+        position: absolute;
+        left: 40%;
+    }
+
+    .Other_Name{
+        position: absolute;
+    }
+
+    .National{
+        position: relative;
+        left: 30%;
+    }
+
+    .DateOfBirth{
+        position: absolute;
+    }
+
+    .B_PIN{
+        position: relative;
+        left: 42%;
+    }
+
+    .Sex{
+        position: absolute;
+    }
+
+    .Relig{
+        position: relative;
+        left: 10%;
+    }
+
+    .permit{
+        position: relative;
+        right:15%;
+    }
+    
+    .First_parent_name{
+        position: absolute;
+    }
+
+    .First_parent_relation{
+        position: relative;
+        left: 20%;
+    }
+
+    .First_parent_email{
+        position: absolute;
+    }
+
+    .First_parent_contact{
+        position: relative;
+        left: 25%;
+    }
+
+    .Second_parent_name{
+        position: absolute;
+    }
+
+    .Second_parent_relation{
+        position: relative;
+        left: 20%;
+    }
+
+    .Second_parent_email{
+        position: absolute;
+    }
+
+    .Second_parent_contact{
+        position: relative;
+        left: 25%;
+    }
+
+    .Sib1_name{
+        position: absolute;
+    }
+    .Sib1_class{
+        position: relative;
+        left: 50%;
+    }
+
+    .Sib2_name{
+        position: absolute;
+    }
+
+    .Sib2_class{
+        position: relative;
+        left: 50%;
+    }
+
+    .Sib3_name{
+        position: absolute;
+    }
+
+    .Sib3_class{
+        position: relative;
+        left: 50%;
+    }
+
+    .Sib4_name{
+        position: absolute;
+    }
+
+    .Sib4_class{
+        position: relative;
+        left: 50%;
+    }
+}
+
+/*used to format page in print preview*/
+@page{
+    margin: 0cm;
+    size: Letter A4 portrait;
+}
+
